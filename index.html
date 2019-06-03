@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Peleitas</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+
+ 
+ <body>
+   <div id="root-app">
+       <h1>Peleitas</h1>
+       <span v-bind:class="{ green: appStatus=='Conectado' }">{{appStatus}}</span>
+       <div class="playersContainer">
+            <p v-if="!players">
+                Esperando Jugadores..
+            </p>
+       </div>
+
+   </div>
+
+  </body>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="/peleitas.js"></script>
+</html>

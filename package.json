@@ -1,0 +1,9 @@
+{
+    "name": "Peleitas server",
+    "version": "0.0.1",
+    "description": "Aplicacion de servidor para controlar los pelebots",
+    "dependencies": {
+        "express": "^4.15.2",
+        "socket.io": "^2.2.0"
+    }
+}
